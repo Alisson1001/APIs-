@@ -40,11 +40,11 @@
                 const tempCelsius = reesponse.data.main.temp;
 
                 if(tempCelsius<=15){
-                    document.querySelector( '#temperatura').innerHTML = `Está muito Friu ${tempCelsius.toFixed(0)}°C.` 
+                    document.querySelector( '#temperatura').innerHTML = `Está muito Frio ${tempCelsius.toFixed(0)}°C.` 
                 }
 
                 if(tempCelsius>=15){
-                    document.querySelector( '#temperatura').innerHTML = `Está Friu ${tempCelsius.toFixed(0)}°C.` 
+                    document.querySelector( '#temperatura').innerHTML = `Está Frio ${tempCelsius.toFixed(0)}°C.` 
                 }
                 if(tempCelsius>=20){
                     document.querySelector( '#temperatura').innerHTML = `Está  Agradavel ${tempCelsius.toFixed(0)}°C.` 
