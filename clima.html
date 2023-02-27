@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="cssIndex/reset.css">
+</head>
+<body>
+    <button><a href="Index.html">Voltar</a></button>
+
+    <h1>Previsão do Tempo - Mogi das Cruzes</h1>
+
+    <input type="text" id="cidade" >
+    <button id="butao" onclick="pesquisar()">
+        Resultado
+    </button>
+
+
+    <p id="temperatura">Carregando...</p>
+    <script>
+        //Biblioteca Axios para realizar uma requisição HTTP a API OpenWeatherMAP e obter a previsão
+
+        //Esta linha define a função getWeather como uma função assicrona.Esperando uma resposta da API .
+
+        
+
+        function pesquisar(){
+            async function getWeather(){
+             var clima = document.getElementById("cidade").value
+
+
+                //Nesta linha fazendo um chamada a API usando a biblioteca AXIOS. A URL da API inclui as informções  de localizaão(MOgi das CRuzes) , a unidade de medida(celsius) e chave API KEY
+                const reesponse = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${clima}&units=metric&appid=64ed82577ced7f69cb1687f0ce536131`);
+    
+                //Resposta em (Celsius e a localização) e a armazenar na variavel TempCelsius
+    
+                const tempCelsius = reesponse.data.main.temp;
+
+                if(tempCelsius<=15){
+                    document.querySelector( '#temperatura').innerHTML = `Está muito Friu ${tempCelsius.toFixed(0)}°C.` 
+                }
+
+                if(tempCelsius>=15){
+                    document.querySelector( '#temperatura').innerHTML = `Está Friu ${tempCelsius.toFixed(0)}°C.` 
+                }
+                if(tempCelsius>=20){
+                    document.querySelector( '#temperatura').innerHTML = `Está  Agradavel ${tempCelsius.toFixed(0)}°C.` 
+                }
+                
+                if(tempCelsius>=30){
+                    document.querySelector( '#temperatura').innerHTML = `Está  Calor ${tempCelsius.toFixed(0)}°C.` 
+                }
+                if(tempCelsius>=35){
+                    document.querySelector( '#temperatura').innerHTML = `Está muito  Calor ${tempCelsius.toFixed(0)}°C.` 
+                }
+    
+                
+            }
+            getWeather();
+        }
+
+
+       
+
+        //chamando a função getWeather para iniciar a consultar a API  
+
+       
+     </script>
+    
+</body>
+</html>

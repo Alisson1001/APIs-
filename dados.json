@@ -1,0 +1,28 @@
+{
+    "rock":{
+        "name":"Linkin Park",
+        "album":"Hybrid Theory",
+        "style":"rock",
+        "price":"RS 29,90",
+        "image":"<img src='img/likinpark.jpeg' width='150px'>"
+
+    },
+    "samba":{
+        "name":"Péricles",
+        "album":"Em Sua Direção",
+        "style":"Samba",
+        "price":"RS 49,90",
+        "image":"<img src='img/pericles.jpg' width='150px'>"
+
+    },
+    "MPB":{
+        "name":"Raul Santos Seixas",
+        "album":"Krig-ha, Bandolo!",
+        "style":"rock",
+        "price":"RS 229,90",
+        "image":"<img src='img/raul.jpg' width='150px'>"
+
+    }
+    
+    
+}
