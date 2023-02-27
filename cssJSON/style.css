@@ -1,0 +1,58 @@
+body{
+     background-color: black;
+}
+
+#principal{
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 200px;
+    padding: 25px;
+    background-color: gray;
+    border-radius: 50px;
+    text-align: center;
+
+}
+
+.inicio{
+    margin-top: 100px;
+    background-color: rgb(117, 0, 0);
+    color: white;
+}
+
+h1{
+    text-align: center;
+}
+
+.samba{
+    padding: 50px;
+    background-color: rgb(117, 0, 0);
+    border-radius: 45px;
+    color: white;
+    font-size: 25px;
+}
+.rock{
+    padding: 50px;
+    background-color: rgb(117, 0, 0);
+    border-radius: 45px;
+    color: white;
+    font-size: 25px;
+}
+.mpb{
+    padding: 50px;
+    background-color: rgb(117, 0, 0);
+    border-radius: 45px;
+    color: white;
+    font-size: 25px;
+
+}
+
+button{
+    background-color: green;
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+
+   
+}
