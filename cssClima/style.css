@@ -5,6 +5,10 @@ body{
     
 }
 
+#previsao{
+  width: 350px;
+}
+
 .login {
     background-color: white;
     padding: 150px;
@@ -18,8 +22,16 @@ body{
 
   .input{
     display: flex;
-    padding-left: 22px;
+    margin-left: -70px;
+
+    width: 500px;
   }
   h1{
     font-size: 26px;
+  }
+  
+  input{
+    width: 350px;
+    padding: 10px;
+    border-radius: 10px;
   }
