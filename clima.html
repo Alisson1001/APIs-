@@ -22,19 +22,27 @@
             
             <br>
             <div class="input">
-                <input type="text" id="cidade" value="Digite uma cidade, Estado ou País">
+                <input type="text" id="cidade" placeholder="Digite uma cidade, Estado ou País, para saber o clima">
                 <br>
-                <button id="butao" onclick="pesquisar()">
-                    Resultado
+                <button class="button" onclick="pesquisar()">
+                    <span class="button_lg">
+                        <span class="button_sl"></span>
+                        <span class="button_text">Procurar</span>
+                    </span>
                 </button>
                 <br>
-                <div class="img">
-                    
-                </div>
             </div>
             <br>
-
             <p id="temperatura">Carregando...</p>
+
+            
+
+            <div style="border: 2px solid rgb(255, 255, 255); margin-left: -115px;" class="informação do usuario">
+                <br>
+               
+                <br>
+                <img src="" id="imagem" alt="" style="height: 350px;;">
+            </div>
         </div>
     </div>
     <script>
@@ -57,26 +65,26 @@
                 const tempCelsius = reesponse.data.main.temp;
 
                 if (tempCelsius <= 15) {
-                    document.querySelector('#temperatura').innerHTML = `Está muito Frio ${tempCelsius.toFixed(0)}°C.`
-                    Image.src = "../APIs--main/img/tempestade-de-neve.png"
+                   document.querySelector('#temperatura').innerHTML = `A Temperatura em ${clima} é de ${tempCelsius.toFixed(0)}°C.`
+                    document.getElementById("imagem").src="img/Frio.jpg";
                 }
 
                 if (tempCelsius >= 15) {
-                    document.querySelector('#temperatura').innerHTML = `Está Frio ${tempCelsius.toFixed(0)}°C.`
-                    Image.src = "../APIs--main/img/tempestade-de-neve.png"
+                    document.querySelector('#temperatura').innerHTML = `A Temperatura em ${clima} é de ${tempCelsius.toFixed(0)}°C.`
+                     document.getElementById("imagem").src="img/FrioDay.jpg";
                 }
                 if (tempCelsius >= 20) {
-                    document.querySelector('#temperatura').innerHTML = `Está  Agradavel ${tempCelsius.toFixed(0)}°C.`
-                    document.getElementById("image").src="./img/tempestade-de-neve.png"
+                    document.querySelector('#temperatura').innerHTML = `A Temperatura em ${clima} é de ${tempCelsius.toFixed(0)}°C.`
+                     document.getElementById("imagem").src="img/Sol.jpg";
                 }
 
                 if (tempCelsius >= 30) {
-                    document.querySelector('#temperatura').innerHTML = `Está  Calor ${tempCelsius.toFixed(0)}°C.`
-                    Image.src = "../APIs--main/img/tempestade-de-neve.png"
+                    ddocument.querySelector('#temperatura').innerHTML = `A Temperatura em ${clima} é de ${tempCelsius.toFixed(0)}°C.`
+                    document.getElementById("imagem").src="img/Calor.jpg";
                 }
                 if (tempCelsius >= 35) {
-                    document.querySelector('#temperatura').innerHTML = `Está muito  Calor ${tempCelsius.toFixed(0)}°C.`
-                    Image.src = "../APIs--main/img/tempestade-de-neve.png"
+                    document.querySelector('#temperatura').innerHTML = `A Temperatura em ${clima} é de ${tempCelsius.toFixed(0)}°C.`
+                     document.getElementById("imagem").src="/img/MuitoCalor.jpg";
                 }
 
 

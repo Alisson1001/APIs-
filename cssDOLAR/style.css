@@ -1,0 +1,108 @@
+body {
+    
+    font-family: Arial, sans-serif;
+    color: black;
+    
+}
+
+.container{
+    height: 500px;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 5%;
+    padding: 50px;
+    background-color: black;
+    border-radius: 10%;
+    text-align: center;
+    
+}
+h1{
+    color: white;
+    
+}
+#dolar{
+ color: white;
+ background-color: black;
+ outline: none;
+ font-size: 50px;
+ margin-left: 50px;
+ width: 150px;
+ color: rgb(35, 139, 3);
+ 
+
+}
+#moeda{
+    color: rgb(35, 139, 3);
+ background-color: black;
+ outline: none;
+ font-size: 50px;
+ margin-left: 300px;
+ width: 150px;
+
+}
+
+input{
+    outline: black;
+    border: 0;
+}
+
+.agrupar{
+    display: flex;
+    text-align: center;
+    
+    
+    
+}
+label{
+    color: white;
+}
+
+/* h1 {
+    color: green;
+}
+
+.conversao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+label {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+input[type="number"],
+span {
+    font-size: 24px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #aaa;
+    margin-left: 10px;
+}
+
+#resultado {
+    color: green;
+    font-weight: bold;
+}
+
+button {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: darkgreen;
+} */

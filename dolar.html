@@ -12,28 +12,46 @@
 
 </head>
 
-<body>
+<body style="background-image: url(img/Dolar.jpg);">
+    <button><a href="index.html">Voltar</a></button>
 
-    <div>
-        <div class="dolar">
-            <input type="text" id="dolar" readonly>
+    <div class="container">
+        <h1 style="font-size: 50px;">Valor do Dolar Atual</h1>
+        <div class="agrupar">
+            <div id="moeda" class>
+                <input type="text" readonly>
+
+            </div>
+            <div class="dolar">
+                <input type="text" id="dolar" readonly>
+            </div>
+        </div>
+        <div class="conversao">
+            <label style="font-size: 50px;">DIGITE O VALOR EM DOLAR: </label>
+            <div> <input style="height: 40px;margin-top: 20px;font-size: 50px;" type="number" id="num1"></div>
+
+
+
+        </div>
+        <div class="conversao" style="font-size:60px;margin-top: 50px;">
+            <label>Conversão em Real R$:</label>
+            <div style="color: rgb(2, 224, 50);">
+                <span style="font-size:80px;" id="resultado"></span>
+            </div>
+
+
         </div>
 
-        <div id="moeda" class>
-            <input type="text" readonly>
-        </div>
-        <button><a href="index.html">Voltar</a></button>
+
+
+
+
 
     </div>
 
-    <div class="conversao">
-        <label>Primeiro número: <input type="number" id="num1"></label>
-        
-        <label>Resultado: <span id="resultado"></span></label>
 
-    </div>
 
-   
+
     <script src="jsDOLAR/main.js"></script>
 
 
